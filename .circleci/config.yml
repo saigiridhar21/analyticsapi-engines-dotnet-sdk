@@ -10,5 +10,5 @@
      steps:
        - checkout
        - run:
-          command: cd Engines && dotnet build
+          command: cd Engines && dotnet build && cd ..\Utilities\Tests && dotnet build
           shell: bash.exe
