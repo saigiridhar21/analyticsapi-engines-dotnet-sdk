@@ -12,3 +12,6 @@
        - run:
           command: cd Engines && dotnet build && cd ../Utilities/Tests && dotnet build && dotnet test
           shell: bash.exe
+       - store_test_results:
+          path: test-results
+
