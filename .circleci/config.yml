@@ -10,8 +10,8 @@
      steps:
        - checkout
        - run:
-          command: cd Engines && dotnet build && cd ../Utilities/Tests && dotnet build && dotnet test -r .
+          command: cd Engines && dotnet build && cd ../Utilities/Tests && dotnet build && dotnet test -l:trx;LogFileName=~/TestOutput.xml
           shell: bash.exe
        - store_test_results:
-          path: Engines/Utilities/Tests
+          path: ~/TestOutput.xml
 
