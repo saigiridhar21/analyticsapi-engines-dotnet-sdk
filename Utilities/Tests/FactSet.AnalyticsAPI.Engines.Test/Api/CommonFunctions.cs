@@ -19,6 +19,9 @@ namespace FactSet.AnalyticsAPI.Engines.Test.Api
                     Username = CommonParameters.UserName,
                     Password = CommonParameters.Password
                 };
+                Console.WriteLine(CommonParameters.BaseUrl);
+                Console.WriteLine(CommonParameters.UserName);
+                Console.WriteLine(CommonParameters.Password);
             }
             else
             {
