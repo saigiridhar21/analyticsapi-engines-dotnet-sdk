@@ -10,8 +10,8 @@
      steps:
        - checkout
        - run:
-          command: cd Engines && dotnet build && cd ../Utilities/Tests && dotnet build && dotnet test
+          command: cd Engines && dotnet build && cd ../Utilities/Tests && dotnet build && dotnet test -r .
           shell: bash.exe
        - store_test_results:
-          path: test-results
+          path: Engines/Utilities/Tests
 
